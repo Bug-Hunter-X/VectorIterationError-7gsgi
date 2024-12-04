@@ -1,0 +1,3 @@
+# Off-by-One Error in Vector Iteration
+
+This repository demonstrates a common off-by-one error in C++ when iterating over a vector using a `for` loop.  The error occurs because the loop condition `i <= vec.size()` attempts to access the element at index `vec.size()`, which is one past the last valid element.  This leads to undefined behavior. The solution shows how to correctly iterate using `i < vec.size()`.
